@@ -1,0 +1,29 @@
+Heroku Commands
+
+Access DB GUI: 
+	heroku addons:open mongolab
+
+See DB URI:
+	heroku config
+
+Push to heroku: 
+	git add .
+	git commit -m "message"
+	git push heroku master
+
+Clone from Heroku:
+    (Download Heroku toolbelt from Heroku)
+    heroku git:clone -a {appname}
+
+Run At Heroku Host:
+	heroku open
+
+Run locally:
+	foreman start web
+
+
+
+MONGO COMMANDS
+
+Start Mongo DB
+	./bin/mongod

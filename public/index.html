@@ -1,0 +1,94 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8">
+        <title>TrendFriend</title>
+        <script src="js/TFChart.js" type="text/javascript"></script>
+        <script src="js/spin.js" type="text/javascript"></script>
+        <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+        <script type="text/javascript"
+          src="https://www.google.com/jsapi?autoload={
+            'modules':[{
+              'name':'visualization',
+              'version':'1',
+              'packages':['corechart']
+            }]
+          }"></script>
+        <!-- JQUERY -->
+        <!-- <script src="/js/search.min.js" type="text/javascript" charset="utf-8"></script>-->
+        <script src="lib/jquery-1.8.2.min.js"></script>
+        <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+        <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+        <!-- Le styles -->
+        <link href="css/bootstrap.css" rel="stylesheet">
+        <style>
+            body {
+                /* 60px to make container go all the way to bottom of topbar */
+                padding-top: 60px; 
+            }
+        </style>
+        <link href="css/bootstrap-responsive.css" rel="stylesheet">
+        <link href="css/styles.css" rel="stylesheet">
+
+        <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+        <!--[if lt IE 9]-->
+        <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+        <!--[endif]-->
+
+        <script src="http://use.edgefonts.net/andika.js"></script>
+        <script src="http://use.edgefonts.net/arvo.js"></script>
+        <script type="text/javascript">
+          $(function() {
+            // Load the Visualization API and the piechart package.
+            google.load('visualization', '1', {'packages':['corechart']});
+            // Set a callback to run when the Google Visualization API is loaded.
+            google.setOnLoadCallback(drawChart);
+            function drawChart() {}; 
+          });
+        </script>
+
+        
+    </head>
+    <body>       
+        <div class="header"></div>
+        <div class="container">
+            <div class="row-fluid">
+                <div id="notification" class="span12>"></div>
+                <div id="content" class="span12>"></div>           
+            </div>
+<!--
+            <footer class="footer">
+            <p class="pull-right"><a href="#">Back Home</a></p>
+                <p>Built as a sample application with <a href="http://documentcloud.github.com/backbone/">Backbone.js</a>,
+                <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap</a>,
+                <a href="http://nodejs.org/">Node.js</a>,
+                <a href="http://expressjs.com/">Express</a>,
+                and <a href="http://www.mongodb.org/">MongoDB</a> by
+                <a href="http://coenraets.org" target="_blank">Christophe Coenraets</a>.<br/>
+                The source code for this application is available in <a href="#">this repository</a> on GitHub.</p>
+            </footer>
+        -->
+        </div>
+
+        <!-- Placed at the end of the document so the pages load faster -->
+        <script src="lib/underscore-min.js"></script>
+        <script src="lib/backbone-min.js"></script>
+        <!--<script src="lib/backbone-1.2.1.js"></script>-->
+        <script src="lib/bootstrap.min.js"></script>
+        <!--<script src="lib/backbone.queryparams.js"></script>-->
+        
+
+        <script src="js/utils.js"></script>
+        <script src="js/models/models.js"></script>
+        <script src="js/views/paginator.js"></script>
+        <script src="js/views/HeaderView.js"></script>
+        <script src="js/views/LoginView.js"></script>
+        <script src="js/views/SearchView.js"></script>
+        <script src="js/views/StockDashboardItemView.js"></script>
+        <script src="js/views/StockDashboardView.js"></script>
+        <script src="js/views/StockView.js"></script>
+        <script src="js/views/about.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+</html>
+
